@@ -1,7 +1,7 @@
 import requests
 
 
-def parse_data_to_dict(data):
+def parse_json(data: dict) -> dict:
     """
     Parse JSON response into a dictionary with specified keys.
 
@@ -68,7 +68,7 @@ def main():
     # it's set to 10 in order to allow for a fast execution of the script
     # tested up to 1000 generating a total of 150 products
     # the url is specific for the meat category
-    url = "https://www.citygross.se/api/v1/esales/products?categoryId=1493&size=100"
+    url = "https://www.citygross.se/api/v1/esales/products?categoryId=1493&size=10"
 
     # <--------------------------Automatically generated via Postman--------------------------------->
     # used to bypass the return of encrypted data from the url
@@ -95,7 +95,8 @@ def main():
 
     if response.status_code == 200:
         data = response.json()
-        parsed_data = parse_data_to_dict(data)
+        print(type(data))
+        parsed_data = parse_json(data)
         for index, product_info in parsed_data.items():
             print(f"Key: {index}")
             for key, value in product_info.items():
