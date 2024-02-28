@@ -1,6 +1,6 @@
 ### City Gross Scraper
 
-This scraper is designed to extract data from the meat section of the City Gross website. Initially, I encountered issues related to receiving a 403 Forbidden response and retrieving encrypted data. These issues were resolved by generating headers using Postman.
+This scraper is designed to extract data from the meat section of the City Gross website. Initially, I encountered issues related to receiving a 403 Forbidden response and retrieving encrypted data. This issues were resolved by generating headers using Postman.
 
 #### Approach:
 
