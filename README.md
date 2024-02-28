@@ -16,7 +16,7 @@ main function takes care or the request part and printing the dictionary for the
 
 get_price function is a helper function for parse_data_to_dict
 
-parse_data_to_dict creates and returns a dictionary with the following structure: 
+parse_json creates and returns a dictionary with the following structure: 
 
 ```
 parsed_data[key: index] = {
