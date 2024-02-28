@@ -6,7 +6,8 @@ This scraper is designed to extract data from the meat section of the City Gross
 
 I found an API endpoint that serves the meat category data. This API utilizes parameters `page` and `size` to paginate the results. After testing, I determined that setting the `size` parameter to 1000 allowed me to retrieve up to 150 products in a single request.
 
-However, one downside of this approach is the accuracy of extracted prices. It appears that the method for determining prices on the site isn't entirely clear. Through manual testing on a small sample of items (10), I achieved an accuracy of 80% in extracting prices. All other data fields extracted were accurate.
+Downside of this aporach seems to be the acuracy at wich the prices are extracted, didn't figure out excatly what sets the price in the site , with manual testing on a small amount of items (10) managed to get an acrruacy of 80%
+Every other data field extracted is accurate.
 
 #### Running the Script:
 
