@@ -13,7 +13,9 @@ Every other data field extracted is accurate.
 
 Split the code into 3 functions: 
 main function takes care or the request part and printing the dictionary for the purpose of manual testing.
+
 get_price function is a helper function for parse_data_to_dict
+
 parse_data_to_dict creates and returns a dictionary with the following structure: 
 
 ```
